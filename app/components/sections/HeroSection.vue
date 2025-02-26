@@ -18,7 +18,7 @@ onMounted(() => {
     <div class="w-full max-w-4xl mx-auto flex flex-col lg:flex-row items-center justify-between">
       <!-- Text Content -->
       <div class="text-center lg:text-left space-y-4">
-        <p class="text-yellow text-lg font-medium animate-fade-in">Hello, Welcome</p>
+        <p class="text-yellow-300 text-lg font-medium animate-fade-in">Hello, Welcome</p>
         <h1 class="text-5xl md:text-6xl font-bold leading-tight animate-slide-in">
           I’m Rebecca Odielo
         </h1>
@@ -36,7 +36,7 @@ onMounted(() => {
         :style="{ opacity, transform: `translateY(${translateY}px)` }"
       >
         <NuxtImg
-          src="/images/secondary.png"
+          src="/images/full2.png"
           alt="Rebecca Odielo"
           class="rounded-lg w-[300px] lg:w-[400px] object-cover"
         />

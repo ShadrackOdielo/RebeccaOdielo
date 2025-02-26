@@ -107,12 +107,13 @@ onUnmounted(() => {
 })
 </script>
 <template>
-  <nav class="flex flex-row w-full sticky top-0 z-50  shadow-md">
+  <nav v-if="$device.isDesktopOrTablet" class="flex flex-row w-full sticky top-0 z-50  shadow-md">
+    <div class="w-full flex items-center justify-between">
       <UButton
     :avatar="{
       src: '/file.svg',
       size: 'xl',
-      alt: 'Rebecca Odielo',
+      alt: 'Rebecca ',
     }"
     size="xl"
     color="neutral"
@@ -120,7 +121,10 @@ onUnmounted(() => {
     label="Rebecca Odielo"
     to="#"
   />
-   <UNavigationMenu  :items="items" variant="link" :highlight="false" color="neutral"  class="w-full justify-center" />
+   <UNavigationMenu  :items="items" variant="link" :highlight="false" color="neutral"   class=" w-full justify-center" />
    <div class="flex items-center justify-center px-8  "><UButton label="Resume" color="warning" size="md" /></div>
+  </div>
+
     </nav>
+    <MobileNavbar />
 </template>
