@@ -3,11 +3,11 @@
     <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center">
       <!-- Image -->
       <div class="flex-1 flex justify-center lg:justify-start">
-        <NuxtImg
+        <img
           src="/images/secondary.png"
           alt="Rebecca Odielo"
           class="rounded-lg shadow-xl w-[350px] lg:w-[450px] object-cover"
-        />
+        >
       </div>
 
       <!-- Content -->
